@@ -18,7 +18,7 @@ The project uses the 2021 Yellow Taxi Trip Data dataset, which includes informat
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/taxi-fare-prediction-anomaly-detection.git
+git clone https://github.com/aqafridi/Fare-Prediction-and-Anomaly-Detection-for-Taxi-Trips.git
 ```
 2. Install the required dependencies (e.g., Python, scikit-learn, TensorFlow, Docker).
 
