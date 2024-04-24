@@ -20,6 +20,10 @@ The project uses the 2021 Yellow Taxi Trip Data dataset, which includes informat
 ```bash
 taxi-fare-prediction-anomaly-detection/
 ├── data/                            # Directory for storing data
+├── dashboard/                       # For Dashboard of app
+│   ├── index.html
+│   ├── main.js
+│   └── app.vue
 ├── docs/                            # Directory for documentation
 ├── models/                          # Directory for storing trained models
 ├── results/                         # Directory for storing results and logs

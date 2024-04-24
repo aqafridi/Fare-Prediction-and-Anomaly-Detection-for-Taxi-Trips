@@ -41,5 +41,5 @@ class DataLoader:
 
         # Add converters for columns with string integers
         converters = {'VendorID': str_to_int, 'passenger_count': str_to_int, 'RatecodeID': str_to_int, 'payment_type': str_to_int, 'PULocationID':str_to_int, 'DOLocationID':str_to_int}
-
+        
         return pd.read_csv(self.data_path, dtype=data_types, parse_dates=date_cols, converters=converters)
