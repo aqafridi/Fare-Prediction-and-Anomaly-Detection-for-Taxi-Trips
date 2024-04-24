@@ -2,6 +2,7 @@
 
 import pickle
 import os
+import joblib
 
 class ModelPersistence:
     def __init__(self, model_dir):
@@ -17,8 +18,7 @@ class ModelPersistence:
             filename (str): The name of the file to save the model.
         """
         file_path = os.path.join(self.model_dir, filename)
-        with open(file_path, 'wb') as file:
-            pickle.dump(model, file)
+        joblib.dump(model, file_path)
 
     def load_model(self, filename):
         """
@@ -31,6 +31,5 @@ class ModelPersistence:
             The loaded model object.
         """
         file_path = os.path.join(self.model_dir, filename)
-        with open(file_path, 'rb') as file:
-            model = pickle.load(file)
+        model = joblib.load(file_path)
         return model
