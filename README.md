@@ -16,38 +16,45 @@ The project uses the 2021 Yellow Taxi Trip Data dataset, which includes informat
 - **Model Deployment:** The trained models can be containerized using Docker and deployed to a cloud platform (e.g., AWS, Google Cloud, or Azure) with a RESTful API or serverless function for serving predictions.
 - **Monitoring and Logging:** Mechanisms for monitoring the deployed models' performance, detecting issues, and facilitating model retraining or updates can be implemented.
 
-## Project Structure
 taxi-fare-prediction-anomaly-detection/
-├── data/                            # Directory for storing data
-├── docs/                            # Directory for documentation
-├── models/                          # Directory for storing trained models
-├── results/                         # Directory for storing results and logs
-├── config/                          # Directory for configuration files
-│   └── hyperparams.yml              # YAML file for hyperparameters
-├── src/                             # Source code directory
-│   ├── __init__.py                  # Initialization file
-│   ├── config.py                    # Configuration module
-│   ├── data/                        # Data-related modules
-│   │   ├── __init__.py
-│   │   └── data_loader.py           # Data loading module
-│   ├── features/                    # Feature engineering modules
-│   │   ├── __init__.py
-│   │   └── feature_engineering.py   # Feature engineering module
-│   ├── modeling/                    # Modeling modules
-│   │   ├── __init__.py
-│   │   ├── anomaly_detection.py     # Anomaly detection module
-│   │   ├── fare_prediction.py       # Fare prediction module
-│   │   ├── hyperparameter_tuning.py # Hyperparameter tuning module
-│   │   ├── model_persistence.py     # Model persistence module
-│   │   └── result_saver.py          # Result saving module
-│   ├── utils/                       # Utility modules
-│   │   ├── __init__.py
-│   │   └── utils.py                 # Utility functions module
-│   └── app.py                       # Main application script
-├── tests/                           # Directory for tests
-├── .gitignore                       # Git ignore file
-├── requirements.txt                 # Python dependencies file
-└── README.md                        # Project README file
+|
+|-- data/
+|-- docs/
+|-- models/
+|-- results/
+|-- config/
+|   |-- hyperparams.yml
+|
+|-- src/
+|   |-- __init__.py
+|   |-- config.py
+|   |-- data/
+|   |   |-- __init__.py
+|   |   |-- data_loader.py
+|   |
+|   |-- features/
+|   |   |-- __init__.py
+|   |   |-- feature_engineering.py
+|   |
+|   |-- modeling/
+|   |   |-- __init__.py
+|   |   |-- anomaly_detection.py
+|   |   |-- fare_prediction.py
+|   |   |-- hyperparameter_tuning.py
+|   |   |-- model_persistence.py
+|   |   |-- result_saver.py
+|   |
+|   |-- utils/
+|   |   |-- __init__.py
+|   |   |-- utils.py
+|   |
+|   |-- app.py
+|
+|-- tests/
+|
+|-- .gitignore
+|-- requirements.txt
+|-- README.md
 
 
 ## Getting Started
