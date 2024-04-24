@@ -44,7 +44,8 @@ taxi-fare-prediction-anomaly-detection/
 │   ├── utils/                       # Utility modules
 │   │   ├── __init__.py
 │   │   └── utils.py                 # Utility functions module
-│   └── app.py                       # Main application script
+│   
+├── app.py                       # Main application script
 ├── tests/                           # Directory for tests
 ├── .gitignore                       # Git ignore file
 ├── requirements.txt                 # Python dependencies file
