@@ -6,7 +6,7 @@ from src.modeling.fare_prediction import FarePredictor
 from src.modeling.anomaly_detection import AnomalyDetector
 
 # Load data
-data_loader = DataLoader('data/yellow_tripdata_2021.csv')
+data_loader = DataLoader('data/2021_Yellow_Taxi_Trip_Data_20240406.csv')
 data = data_loader.load_data()
 
 # Feature engineering
