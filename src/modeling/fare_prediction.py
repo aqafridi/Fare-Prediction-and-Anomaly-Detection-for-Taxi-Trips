@@ -21,16 +21,16 @@ class FarePredictor:
             target (str): Name of the target column.
             tune_hyperparams (bool): Whether to tune hyperparameters or use default values.
         """
-        X = self.data[features]
+        x = self.data[features]
         y = self.data[target]
 
         if tune_hyperparams:
             study = optuna.create_study(direction='minimize')
-            self.model = study.optimize(tune_random_forest_hyperparams, n_trials=100, X=X, y=y)
+            self.model = study.optimize(tune_random_forest_hyperparams, n_trials=100, X=x, y=y)
             self.model_persistence.save_model(self.model.user_attrs['best_model'], 'fare_prediction_model.joblib')
         else:
             self.model = RandomForestRegressor()
-            self.model.fit(X, y)
+            self.model.fit(x, y)
             self.model_persistence.save_model(self.model, 'fare_prediction_model.joblib')
 
     
