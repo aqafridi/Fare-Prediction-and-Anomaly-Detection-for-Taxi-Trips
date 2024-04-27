@@ -1,4 +1,4 @@
-# Fare Prediction and Anomaly Detection for Yellow Taxi Trips
+# Fare Prediction and Anomaly Detection for Taxi Trips
 
 This project aims to build a machine learning system for predicting the total fare amount for yellow taxi trips in New York City and detecting potential anomalies or fraudulent trip records. The system leverages advanced regression modeling techniques for fare prediction and unsupervised anomaly detection algorithms. Additionally, it incorporates hyperparameter tuning and model persistence for optimizing and saving the trained models.
 
